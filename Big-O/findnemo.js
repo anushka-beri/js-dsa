@@ -1,8 +1,12 @@
-const nemo = ['nemo' , 'dory'];
+const fish = ['dory', 'bruce', 'marlin', 'nemo'];
+const nemo = ['nemo'];
+const everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill', 'bloat', 'nigel', 'squirt', 'darla', 'hank'];
 
-function findNemo(array){
+const large = new Array(10).fill('nemo');
+
+function findNemo2(fish){
     let t0 = performance.now();
-    for(i=0; i< array.length ; i++ ){
+    for(i=0; i< fish.length ; i++ ){
         if(array[i] === 'nemo'){
             console.log('Found NEMO!');
         }
@@ -12,4 +16,4 @@ function findNemo(array){
     // console.log('length of array = ' + array.length);
 }
 
-findNemo(nemo);
+findNemo2(everyone);
